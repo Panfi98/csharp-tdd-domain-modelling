@@ -1,5 +1,3 @@
-#Domain Models In Here
-
 <span style="font-size:0.5em;">Story</span>
 <br />
 As a supermarket shopper,
@@ -11,7 +9,7 @@ I'd like to be able to know the total cost of items in my basket.
 <br />
 | Classes         | Methods                                             | Scenario               | Outputs                   |
 |-----------------|-----------------------------------------------------|------------------------|---------------------------|
-| `SuperMarket`   | `itemCostCalculator(Dictionary<string,int> receipt)`| sum up item cost (keys)| total cost (int total)    |
+| `SuperMarket`   | `itemCostCalculator(Dictionary<string,int> receipt)`| Sum up item cost (keys)| Total cost (int total)    |
 |                 |                                                     |                        |                           |
 <br />
 <span style="font-size:0.5em;">Story</span>
@@ -25,5 +23,5 @@ I bought as well as the quantity, and a total cost of my basket.
 <br />
 | Classes         | Methods                                                 | Scenario                                                | Outputs                   |
 |-----------------|---------------------------------------------------------|---------------------------------------------------------|---------------------------|
-| `SuperMarket`   | `showReceipt(Dictionary<string,int> receipt, int total)`| print items with their costs, and total cost at the end | printed receipt on console|
+| `SuperMarket`   | `showReceipt(Dictionary<string,int> receipt, int total)`| Print items with their costs, and total cost at the end | Printed receipt on console|
 |                 |                                                         |                                                         |                           |
