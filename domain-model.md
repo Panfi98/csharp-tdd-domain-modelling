@@ -7,10 +7,16 @@ I'd like to be able to know the total cost of items in my basket.
 
 <span style="font-size:0.5em;">Model</span>
 <br />
-| Classes         | Methods                                             | Scenario               | Outputs                   |
-|-----------------|-----------------------------------------------------|------------------------|---------------------------|
-| `SuperMarket`   | `itemCostCalculator(Dictionary<string,int> receipt)`| Sum up item cost (keys)| Total cost (int total)    |
-|                 |                                                     |                        |                           |
+| Classes         | Methods                                                                                 | Scenario                      | Outputs                   |
+|-----------------|-----------------------------------------------------------------------------------------|-------------------------------|---------------------------|
+| `SuperMarket`   | `itemInBasket(string itemName, decimal itemPrice, Dictionary<string,int> receipt)`      | Item is in not in the basket  | true                      |
+|                 |                                                                                         |                               |                           |
+|                 | `itemInBasket(Dictionary<string,int> receipt)`                                          | Item is not in the basket     | false                     |
+|                 |                                                                                         |                               |                           |
+|                 | `putItemInBasket(Dictionary<string,int> receipt, bool isItemInBasket)`                  |                               |                           |
+|                 |                                                                                         |                               |                           |
+|                 | `costCalculate(Dictionary<string,int> receipt)`                                         |                               | Total cost (int total)    |
+|                 |                                                                                         |                               |                           |
 <br />
 <span style="font-size:0.5em;">Story</span>
 <br />
